@@ -22,6 +22,7 @@ struct ContentView: View {
         })
     }
     func customersPull() -> [String] {
+        let ref = Database.database().reference()
         return [""]
     }
 }

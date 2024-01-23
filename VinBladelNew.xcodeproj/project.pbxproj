@@ -39,6 +39,7 @@
 		04AB35832B601F2000BCC19D /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 04AB35822B601F2000BCC19D /* FirebaseRemoteConfigSwift */; };
 		04AB35852B601F2000BCC19D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 04AB35842B601F2000BCC19D /* FirebaseStorage */; };
 		04AB35872B601F2000BCC19D /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 04AB35862B601F2000BCC19D /* FirebaseStorageCombine-Community */; };
+		04AB358A2B60230000BCC19D /* FirebaseFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB35892B60230000BCC19D /* FirebaseFunctions.swift */; };
 		B177BA242B60204C0064FFA8 /* General_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA232B60204C0064FFA8 /* General_Inspection.swift */; };
 		B177BA262B60205E0064FFA8 /* Tire_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA252B60205E0064FFA8 /* Tire_Inspection.swift */; };
 		B177BA282B6020720064FFA8 /* MultiPoint_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */; };
@@ -53,6 +54,7 @@
 		04AB35452B5B386B00BCC19D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AB35482B5B386B00BCC19D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04AB354F2B601ED900BCC19D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04AB35892B60230000BCC19D /* FirebaseFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFunctions.swift; sourceTree = "<group>"; };
 		B177BA232B60204C0064FFA8 /* General_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General_Inspection.swift; sourceTree = "<group>"; };
 		B177BA252B60205E0064FFA8 /* Tire_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tire_Inspection.swift; sourceTree = "<group>"; };
 		B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPoint_Inspection.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */,
 				04AB35452B5B386B00BCC19D /* Assets.xcassets */,
 				04AB35472B5B386B00BCC19D /* Preview Content */,
+				04AB35892B60230000BCC19D /* FirebaseFunctions.swift */,
 			);
 			path = VinBladelNew;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				B177BA2C2B6020980064FFA8 /* Brakes_Inspection.swift in Sources */,
 				B177BA282B6020720064FFA8 /* MultiPoint_Inspection.swift in Sources */,
 				04AB35422B5B386900BCC19D /* VinBladelNewApp.swift in Sources */,
+				04AB358A2B60230000BCC19D /* FirebaseFunctions.swift in Sources */,
 				B177BA242B60204C0064FFA8 /* General_Inspection.swift in Sources */,
 				B177BA262B60205E0064FFA8 /* Tire_Inspection.swift in Sources */,
 				B177BA2A2B6020820064FFA8 /* UnderCar_Inspection.swift in Sources */,

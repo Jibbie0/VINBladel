@@ -10,20 +10,13 @@ import Foundation
 import FirebaseDatabase
 
 struct ContentView: View {
-    @State var customers:[String] = []
+    @ObservedObject var firebaseFunctions = FirebaseFunctions()
     var body: some View {
         List() {
             ForEach(0...10, id: \.self) { Customer in
                 Text("\(Customer)")
             }
         }
-        .onAppear(perform: {
-            customers = customersPull()
-        })
-    }
-    func customersPull() -> [String] {
-        let ref = Database.database().reference()
-        return [""]
     }
 }
 

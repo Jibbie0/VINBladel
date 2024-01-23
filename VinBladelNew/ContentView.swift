@@ -6,16 +6,24 @@
 //
 
 import SwiftUI
+import Foundation
+import FirebaseDatabase
 
 struct ContentView: View {
+    @State var customers:[String] = []
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List() {
+            ForEach(0...10, id: \.self) { Customer in
+                Text("\(Customer)")
+            }
         }
-        .padding()
+        .onAppear(perform: {
+            customers = customersPull()
+        })
+    }
+    func customersPull() -> [String] {
+        let ref = Database.database().reference()
+        return [""]
     }
 }
 

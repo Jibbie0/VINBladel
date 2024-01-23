@@ -44,6 +44,7 @@
 		B177BA282B6020720064FFA8 /* MultiPoint_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */; };
 		B177BA2A2B6020820064FFA8 /* UnderCar_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA292B6020820064FFA8 /* UnderCar_Inspection.swift */; };
 		B177BA2C2B6020980064FFA8 /* Brakes_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */; };
+		C98F5E0C2B6026BB00ED07DE /* backend in Resources */ = {isa = PBXBuildFile; fileRef = C98F5E0B2B6026BB00ED07DE /* backend */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPoint_Inspection.swift; sourceTree = "<group>"; };
 		B177BA292B6020820064FFA8 /* UnderCar_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderCar_Inspection.swift; sourceTree = "<group>"; };
 		B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brakes_Inspection.swift; sourceTree = "<group>"; };
+		C98F5E0B2B6026BB00ED07DE /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backend; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,14 +120,11 @@
 		04AB35402B5B386900BCC19D /* VinBladelNew */ = {
 			isa = PBXGroup;
 			children = (
+				C98F5E0D2B6026BE00ED07DE /* frontend */,
+				C98F5E0B2B6026BB00ED07DE /* backend */,
 				04AB354F2B601ED900BCC19D /* GoogleService-Info.plist */,
 				04AB35412B5B386900BCC19D /* VinBladelNewApp.swift */,
 				04AB35432B5B386900BCC19D /* ContentView.swift */,
-				B177BA232B60204C0064FFA8 /* General_Inspection.swift */,
-				B177BA252B60205E0064FFA8 /* Tire_Inspection.swift */,
-				B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */,
-				B177BA292B6020820064FFA8 /* UnderCar_Inspection.swift */,
-				B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */,
 				04AB35452B5B386B00BCC19D /* Assets.xcassets */,
 				04AB35472B5B386B00BCC19D /* Preview Content */,
 			);
@@ -145,6 +144,18 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C98F5E0D2B6026BE00ED07DE /* frontend */ = {
+			isa = PBXGroup;
+			children = (
+				B177BA232B60204C0064FFA8 /* General_Inspection.swift */,
+				B177BA252B60205E0064FFA8 /* Tire_Inspection.swift */,
+				B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */,
+				B177BA292B6020820064FFA8 /* UnderCar_Inspection.swift */,
+				B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */,
+			);
+			path = frontend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +251,7 @@
 				04AB35492B5B386B00BCC19D /* Preview Assets.xcassets in Resources */,
 				04AB35462B5B386B00BCC19D /* Assets.xcassets in Resources */,
 				04AB35502B601ED900BCC19D /* GoogleService-Info.plist in Resources */,
+				C98F5E0C2B6026BB00ED07DE /* backend in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

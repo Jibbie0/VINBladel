@@ -10,7 +10,7 @@ import SwiftUI
 import FirebaseDatabase
 
 struct Summary_Page: View {
-    @ObservedObject var firebaseFunctions = FirebaseFunctions()
+    @ObservedObject var firebaseClass = FirebaseClass()
     var body: some View {
         VStack(alignment: .leading) {
             Text("Your Summary")
@@ -21,7 +21,7 @@ struct Summary_Page: View {
             Text("Your Data (Sample)")
                 .bold()
             List {
-                ForEach(firebaseFunctions.customers, id: \.self) { Customer in
+                ForEach(firebaseClass.customers, id: \.self) { Customer in
                     Text("\(Customer.firstName)")
                 }
             }

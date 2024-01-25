@@ -16,14 +16,12 @@ struct CustomerCarsView: View {
             ForEach(firebaseClass.carArray, id: \.self) { car in
                 if car.customerID == currentCustomer.id {
                     NavigationLink("\(car.year) \(car.makeDescription)") {
-                        CustomerCarSpecsView(customerCar: car)
+                        CustomerCarSpecsView(customerCar: car, firstName: currentCustomer.firstName, lastName: currentCustomer.lastName)
                     }
                 }
             }
         }
-        .onAppear() {
-            firebaseClass.currentPerson = currentCustomer
-        }
+        .navigationTitle("\(currentCustomer.lastName), \(currentCustomer.lastName)")
     }
 }
 

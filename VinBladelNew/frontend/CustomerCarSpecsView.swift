@@ -9,8 +9,11 @@ import SwiftUI
 
 struct CustomerCarSpecsView: View {
     let customerCar:vehicle
+    @ObservedObject var firebaseClass = FirebaseClass()
+    let firstName: String
+    let lastName: String
     var body: some View {
-        VStack {
+        List {
             Text("VIN: \(customerCar.vin)")
             Text("Make: \(customerCar.makeDescription)")
             Text("Model: \(customerCar.modelDescription)")
@@ -22,9 +25,10 @@ struct CustomerCarSpecsView: View {
             Text("Drive Type: \(customerCar.vehicleDriveType)")
             Text("Mileage: \(customerCar.mileage)")
         }
+        .navigationTitle("\(lastName), \(firstName)")
     }
 }
 
 #Preview {
-    CustomerCarSpecsView(customerCar: vehicle(customerID: "", engineDescription: "", makeDescription: "", mileage: "", modelDescription: "", numberOfCylinders: "", transmission: "", vin: "", vehicleID: "", vehicleDriveType: "", vehicleSubModel: "", year: ""))
+    CustomerCarSpecsView(customerCar: vehicle(customerID: "", engineDescription: "", makeDescription: "", mileage: "", modelDescription: "", numberOfCylinders: "", transmission: "", vin: "", vehicleID: "", vehicleDriveType: "", vehicleSubModel: "", year: ""), firstName: "", lastName: "")
 }

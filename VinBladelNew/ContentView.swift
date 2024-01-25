@@ -12,16 +12,7 @@ import FirebaseDatabase
 struct ContentView: View {
     @ObservedObject var firebaseClass = FirebaseClass()
     var body: some View {
-<<<<<<< HEAD
-        Image("Motorist.org")
-        List() {
-            ForEach(firebaseFunctions.customers, id: \.self) { Customer in
-                Text("\(Customer.firstName)")
-            }
-        }
-=======
         CustomerListView()
->>>>>>> main
     }
 }
 

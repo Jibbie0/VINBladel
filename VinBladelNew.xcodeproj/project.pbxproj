@@ -48,7 +48,6 @@
 		B177BA282B6020720064FFA8 /* MultiPoint_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */; };
 		B177BA2A2B6020820064FFA8 /* UnderCar_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA292B6020820064FFA8 /* UnderCar_Inspection.swift */; };
 		B177BA2C2B6020980064FFA8 /* Brakes_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */; };
-		B1DF5A602B62CCDE0000668B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF5A5F2B62CCDE0000668B /* TabView.swift */; };
 		C1A51DBE2B62C6B6000D0399 /* Summary_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A51DBD2B62C6B6000D0399 /* Summary_Page.swift */; };
 		C98F5E0C2B6026BB00ED07DE /* backend in Resources */ = {isa = PBXBuildFile; fileRef = C98F5E0B2B6026BB00ED07DE /* backend */; };
 /* End PBXBuildFile section */

@@ -48,6 +48,7 @@
 		B177BA282B6020720064FFA8 /* MultiPoint_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */; };
 		B177BA2A2B6020820064FFA8 /* UnderCar_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA292B6020820064FFA8 /* UnderCar_Inspection.swift */; };
 		B177BA2C2B6020980064FFA8 /* Brakes_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */; };
+		C1A51DBE2B62C6B6000D0399 /* Summary_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A51DBD2B62C6B6000D0399 /* Summary_Page.swift */; };
 		C98F5E0C2B6026BB00ED07DE /* backend in Resources */ = {isa = PBXBuildFile; fileRef = C98F5E0B2B6026BB00ED07DE /* backend */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPoint_Inspection.swift; sourceTree = "<group>"; };
 		B177BA292B6020820064FFA8 /* UnderCar_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderCar_Inspection.swift; sourceTree = "<group>"; };
 		B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brakes_Inspection.swift; sourceTree = "<group>"; };
+		C1A51DBD2B62C6B6000D0399 /* Summary_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary_Page.swift; sourceTree = "<group>"; };
 		C98F5E0B2B6026BB00ED07DE /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backend; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +168,7 @@
 				04AB358F2B62BBB500BCC19D /* CustomerListView.swift */,
 				04AB35912B62BD5300BCC19D /* CustomerCarsView.swift */,
 				04AB35932B62CA5900BCC19D /* CustomerCarSpecsView.swift */,
+				C1A51DBD2B62C6B6000D0399 /* Summary_Page.swift */,
 			);
 			path = frontend;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				04AB35942B62CA5900BCC19D /* CustomerCarSpecsView.swift in Sources */,
 				04AB358C2B60293A00BCC19D /* FirebaseClass.swift in Sources */,
 				B177BA242B60204C0064FFA8 /* General_Inspection.swift in Sources */,
+				C1A51DBE2B62C6B6000D0399 /* Summary_Page.swift in Sources */,
 				B177BA262B60205E0064FFA8 /* Tire_Inspection.swift in Sources */,
 				B177BA2A2B6020820064FFA8 /* UnderCar_Inspection.swift in Sources */,
 			);

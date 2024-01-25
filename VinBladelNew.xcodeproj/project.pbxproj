@@ -68,6 +68,7 @@
 		B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPoint_Inspection.swift; sourceTree = "<group>"; };
 		B177BA292B6020820064FFA8 /* UnderCar_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderCar_Inspection.swift; sourceTree = "<group>"; };
 		B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brakes_Inspection.swift; sourceTree = "<group>"; };
+		B1DF5A5F2B62CCDE0000668B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		C1A51DBD2B62C6B6000D0399 /* Summary_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary_Page.swift; sourceTree = "<group>"; };
 		C98F5E0B2B6026BB00ED07DE /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backend; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +137,7 @@
 				04AB358B2B60293A00BCC19D /* FirebaseClass.swift */,
 				04AB35412B5B386900BCC19D /* VinBladelNewApp.swift */,
 				04AB35432B5B386900BCC19D /* ContentView.swift */,
+				B1DF5A5F2B62CCDE0000668B /* TabView.swift */,
 				04AB35452B5B386B00BCC19D /* Assets.xcassets */,
 				04AB35472B5B386B00BCC19D /* Preview Content */,
 			);
@@ -279,6 +281,7 @@
 			files = (
 				04AB35442B5B386900BCC19D /* ContentView.swift in Sources */,
 				04AB35902B62BBB500BCC19D /* CustomerListView.swift in Sources */,
+				B1DF5A602B62CCDE0000668B /* TabView.swift in Sources */,
 				B177BA2C2B6020980064FFA8 /* Brakes_Inspection.swift in Sources */,
 				B177BA282B6020720064FFA8 /* MultiPoint_Inspection.swift in Sources */,
 				04AB35422B5B386900BCC19D /* VinBladelNewApp.swift in Sources */,

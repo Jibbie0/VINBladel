@@ -16,7 +16,7 @@ struct CustomerCarsView: View {
             ForEach(firebaseClass.carArray, id: \.self) { car in
                 if car.customerID == currentCustomer.id {
                     NavigationLink("\(car.year) \(car.modelDescription)") {
-                        CustomerCarSpecsView(customerCar: car, firstName: currentCustomer.firstName, lastName: currentCustomer.lastName)
+                        CustomerTabs(customerCar: car, firstName: currentCustomer.firstName, lastName: currentCustomer.lastName)
                     }
                 }
             }

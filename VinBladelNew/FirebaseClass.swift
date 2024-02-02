@@ -13,12 +13,15 @@ import FirebaseCore
 class FirebaseClass: ObservableObject {
     @Published var customers:[customer] = []
     @Published var carArray:[vehicle] = []
+    @Published var parts:[String] = []
+    @Published var currentPartWork:[partWork] = []
     @Published var currentPerson:customer = customer(addr1: "", addr2: "", city: "", country: "", email: "", firstName: "", homePhone: "", id: "", key: "", lastName: "", state: "", title: "", workPhone: "", zipCode: "")
     let ref = Database.database().reference()
     
     init() {
         pullFromFirebase()
         retrieveCustomerVehicles()
+        retrieveParts()
     }
     
     func pullFromFirebase() {
@@ -64,6 +67,27 @@ class FirebaseClass: ObservableObject {
             }
         }
     }
+    
+    func retrieveParts() {
+        ref.child("parts").getData { myError, myDataSnapshot in
+            for part in myDataSnapshot?.children.allObjects as! [DataSnapshot] {
+                let myPart: String = part.key
+                self.parts.append(myPart)
+            }
+        }
+    }
+    
+    func pullCurrentPart(curPart: String) {
+        self.currentPartWork.removeAll()
+        ref.child("parts").child("\(curPart)").getData { myError, myDataSnapshot in
+            for cur in myDataSnapshot?.children.allObjects as! [DataSnapshot] {
+                let name: String = cur.key
+                let price: Int =  cur.value as! Int
+                self.currentPartWork.append(partWork(partWork: name, price: price))
+            }
+        }
+    }
+    
 }
 
 struct customer: Hashable, Codable {
@@ -98,3 +122,7 @@ struct vehicle: Hashable, Codable {
     let year: String
 }
                                             
+struct partWork: Hashable, Codable {
+    let partWork: String
+    let price: Int
+}

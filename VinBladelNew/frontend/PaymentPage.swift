@@ -10,13 +10,18 @@ import FirebaseDatabase
 
 struct PaymentPage: View {
     let ref = Database.database().reference()
+    @ObservedObject var firebaseClass = FirebaseClass()
     var body: some View {
         VStack {
-            
+            ForEach(firebaseClass.parts, id: \.self) { part in
+                Button(part) {
+                    firebaseClass.pullCurrentPart(curPart: part)
+                }
+            }
+            ForEach(firebaseClass.currentPartWork, id: \.self) { work in
+                Text("\(work.partWork): \(work.price)")
+            }
         }
-    }
-    func getParts() {
-        
     }
 }
 

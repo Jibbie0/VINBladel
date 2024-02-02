@@ -150,7 +150,6 @@
 				04AB35412B5B386900BCC19D /* VinBladelNewApp.swift */,
 				04AB35432B5B386900BCC19D /* ContentView.swift */,
 				04CED1692B6D4D2100351E95 /* FirebaseClass.swift */,
-				B1E349592B6D5180009CB3EC /* HomeScreen.swift */,
 				04AB35452B5B386B00BCC19D /* Assets.xcassets */,
 				04AB35472B5B386B00BCC19D /* Preview Content */,
 			);
@@ -175,6 +174,7 @@
 		C98F5E0D2B6026BE00ED07DE /* frontend */ = {
 			isa = PBXGroup;
 			children = (
+				B1E349592B6D5180009CB3EC /* HomeScreen.swift */,
 				B177BA232B60204C0064FFA8 /* General_Inspection.swift */,
 				B177BA252B60205E0064FFA8 /* Tire_Inspection.swift */,
 				B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */,

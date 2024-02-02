@@ -11,28 +11,28 @@ import Foundation
 
 import SwiftUI
 
-struct TabView: View {
+struct TabsScreen: View {
     var body: some View {
         TabView {
             GeneralView()
                 .tabItem {
-                    Label("General Inspection")
+                    Label("Car Info", systemImage: "car.fill")
                 }
             TireView()
                 .tabItem {
-                    Label("Tire Inspection")
+                    Label("Payment", systemImage: "pencil")
                 }
             MultipointView()
                 .tabItem {
-                    Label("Multipoint Inspection")
+                    Label("Receipt", systemImage: "newspaper.fill")
                 }
             UnderCarView()
                 .tabItem {
-                    Label("UnderCar Inspection")
+                    Label("Invoice", systemImage: "paperplane.fill")
                 }
             BrakesView()
                 .tabItem{
-                    Label("Brakes Inspection")
+                    Label("Checklist", systemImage: "checklist")
                 }
         }
     }

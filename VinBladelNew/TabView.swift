@@ -16,23 +16,23 @@ struct TabsScreen: View {
         TabView {
             GeneralView()
                 .tabItem {
-                    Label("Car Info", systemImage: "car.fill")
+                    Label("General Inspection")
                 }
             TireView()
                 .tabItem {
-                    Label("Payment", systemImage: "pencil")
+                    Label("Tire Inspection")
                 }
             MultipointView()
                 .tabItem {
-                    Label("Receipt", systemImage: "newspaper.fill")
+                    Label("Multipoint Inspection")
                 }
             UnderCarView()
                 .tabItem {
-                    Label("Invoice", systemImage: "paperplane.fill")
+                    Label("UnderCar Inspection")
                 }
             BrakesView()
                 .tabItem{
-                    Label("Checklist", systemImage: "checklist")
+                    Label("Brakes Inspection")
                 }
         }
     }

@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct ManualVinPage: View {
+    var body: some View {
+        Text("Text")
+    }
+}
+
+#Preview {
+    ManualVinPage()
+}

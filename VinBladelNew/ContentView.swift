@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Foundation
-import FirebaseDatabase
 
 struct ContentView: View {
     @ObservedObject var firebaseClass = FirebaseClass()

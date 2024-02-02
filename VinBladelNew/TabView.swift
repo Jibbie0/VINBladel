@@ -34,7 +34,6 @@ struct TabView: View {
                 .tabItem{
                     Label("Brakes Inspection")
                 }
-            
         }
     }
 }

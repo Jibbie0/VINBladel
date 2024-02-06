@@ -21,7 +21,7 @@ struct CustomerCarsView: View {
                 }
             }
         }
-        .navigationTitle("\(currentCustomer.lastName), \(currentCustomer.lastName)")
+        .navigationTitle("\(currentCustomer.lastName), \(currentCustomer.firstName)")
     }
 }
 

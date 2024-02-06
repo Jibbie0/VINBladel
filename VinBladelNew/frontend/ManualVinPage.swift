@@ -17,6 +17,9 @@ struct ManualVinPage: View {
                 HStack {
                     Spacer()
                     VStack {
+                        Text("VinBladel")
+                            .font(.system(size: 32))
+                            .bold()
                         TextField("Enter Car Vin", text: $carVin)
                             .frame(width: geo.size.width * 0.7, height: 35)
                             .padding()
@@ -29,7 +32,7 @@ struct ManualVinPage: View {
                             Text("Submit")
                                 .frame(width: geo.size.width * 0.7, height: 35)
                                 .padding()
-                                .background(Color.orange.opacity(0.6))
+                                .background(Color.orange.opacity(0.8))
                                 .clipShape(RoundedRectangle(cornerRadius: 3.0))
                                 .foregroundStyle(Color.white)
                         }

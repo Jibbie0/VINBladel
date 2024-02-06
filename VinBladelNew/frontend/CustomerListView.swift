@@ -10,15 +10,25 @@ import FirebaseDatabase
 
 struct CustomerListView: View {
     @ObservedObject var firebaseClass = FirebaseClass()
+    @State var listText: String = ""
     var body: some View {
         NavigationStack {
-            List() {
-                ForEach(firebaseClass.customers, id: \.self) { Customer in
+            Text("Choose Your Name")
+                .bold()
+            List {
+                if listText == ""  {
+                    Text("Type in the FIRST or LAST name")
+                } else {
+                    Text("Results for \"\(listText)\"")
+                }
+                ForEach(firebaseClass.customers.filter { $0.firstName.contains(listText) || $0.lastName.contains(listText) }, id: \.self) { Customer in
                     NavigationLink("\(Customer.lastName), \(Customer.firstName)") {
                         CustomerCarsView(currentCustomer: Customer)
                     }
                 }
             }
+            .searchable(text: $listText)
+            .listStyle(PlainListStyle())
         }
     }
 }

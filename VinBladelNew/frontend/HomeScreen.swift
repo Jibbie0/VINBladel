@@ -36,7 +36,7 @@ struct HomeScreen: View {
                             .bold()
                     }
                     NavigationLink(destination: CustomerListView()) {
-                        Text("Customer List View")
+                        Text("Customer List")
                             .frame(width: geo.size.width * 0.8)
                             .padding()
                             .background(Color.orange)

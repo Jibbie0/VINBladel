@@ -22,6 +22,7 @@ class FirebaseClass: ObservableObject {
         pullFromFirebase()
         retrieveCustomerVehicles()
         retrieveParts()
+        pullCurrentPart(curPart: "Alignment")
     }
     
     func pullFromFirebase() {

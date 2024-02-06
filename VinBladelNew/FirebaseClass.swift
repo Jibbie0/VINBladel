@@ -82,8 +82,11 @@ class FirebaseClass: ObservableObject {
         ref.child("parts").child("\(curPart)").getData { myError, myDataSnapshot in
             for cur in myDataSnapshot?.children.allObjects as! [DataSnapshot] {
                 let name: String = cur.key
-                let price: Int =  cur.value as! Int
-                self.currentPartWork.append(partWork(partWork: name, price: price))
+                if let price = cur.value as? Int {
+                    self.currentPartWork.append(partWork(partWork: name, price: price))
+                } else {
+                    
+                }
             }
         }
     }

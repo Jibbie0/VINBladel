@@ -22,6 +22,7 @@ struct PaymentPage: View {
                 Text("\(work.partWork): \(work.price)")
             }
         }
+        .navigationTitle("\(firebaseClass.currentPerson.lastName), \(firebaseClass.currentPerson.firstName)")
     }
 }
 

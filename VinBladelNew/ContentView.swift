@@ -11,7 +11,7 @@ import Foundation
 struct ContentView: View {
     @ObservedObject var firebaseClass = FirebaseClass()
     var body: some View {
-        HomeScreen()
+        Summary_Page()
     }
 }
 

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ManualVinPage: View {
     @State var carVin: String = ""
+    @ObservedObject var firebaseClass = FirebaseClass()
     var body: some View {
         GeometryReader { geo in
             VStack {
@@ -26,8 +27,8 @@ struct ManualVinPage: View {
                             .background(Color.gray.opacity(0.2))
                             .clipShape(RoundedRectangle(cornerRadius: 3.0))
                         
-                        Button {
-                            // code for the vin
+                        NavigationLink {
+                            CustomerTabs(customerCar: firebaseClass.pullUsingVIN(vin: carVin), firstName: "", lastName: "")
                         } label: {
                             Text("Submit")
                                 .frame(width: geo.size.width * 0.7, height: 35)

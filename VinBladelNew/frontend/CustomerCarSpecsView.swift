@@ -13,19 +13,22 @@ struct CustomerCarSpecsView: View {
     let firstName: String
     let lastName: String
     var body: some View {
-        List {
-            Text("VIN: \(customerCar.vin)")
-            Text("Make: \(customerCar.makeDescription)")
-            Text("Model: \(customerCar.modelDescription)")
-            Text("Submodel: \(customerCar.vehicleSubModel)")
-            Text("Model Year: \(customerCar.year)")
-            Text("Engine (L) \(customerCar.engineDescription)")
-            Text("Cylinders: \(customerCar.numberOfCylinders)")
-            Text("Transmission: \(customerCar.transmission)")
-            Text("Drive Type: \(customerCar.vehicleDriveType)")
-            Text("Mileage: \(customerCar.mileage)")
+        VStack {
+            Text("\(lastName), \(firstName)")
+                .font(.title)
+            List {
+                Text("VIN: \(customerCar.vin)")
+                Text("Make: \(customerCar.makeDescription)")
+                Text("Model: \(customerCar.modelDescription)")
+                Text("Submodel: \(customerCar.vehicleSubModel)")
+                Text("Model Year: \(customerCar.year)")
+                Text("Engine (L) \(customerCar.engineDescription)")
+                Text("Cylinders: \(customerCar.numberOfCylinders)")
+                Text("Transmission: \(customerCar.transmission)")
+                Text("Drive Type: \(customerCar.vehicleDriveType)")
+                Text("Mileage: \(customerCar.mileage)")
+            }
         }
-        .navigationTitle("\(lastName), \(firstName)")
     }
 }
 

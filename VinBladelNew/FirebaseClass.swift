@@ -16,6 +16,8 @@ class FirebaseClass: ObservableObject {
     @Published var parts:[String] = []
     @Published var currentPartWork:[partWork] = []
     @Published var currentPerson:customer = customer(addr1: "", addr2: "", city: "", country: "", email: "", firstName: "", homePhone: "", id: "", key: "", lastName: "", state: "", title: "", workPhone: "", zipCode: "")
+    @Published var currentCar:vehicle = vehicle(customerID: "", engineDescription: "", makeDescription: "", mileage: "", modelDescription: "", numberOfCylinders: "", transmission: "", vin: "", vehicleID: "", vehicleDriveType: "", vehicleSubModel: "", year: "")
+    @State var currentID: String = ""
     let ref = Database.database().reference()
     
     init() {
@@ -92,6 +94,30 @@ class FirebaseClass: ObservableObject {
         }
     }
     
+    func pullUsingVIN(vin: String) -> vehicle {
+        ref.child("vehicles").getData { myError, myDataSnapshot in
+            for car in myDataSnapshot?.children.allObjects as! [DataSnapshot] {
+                if car.childSnapshot(forPath: "VIN").value as! String == vin {
+                    let customerID: String = car.childSnapshot(forPath: "Customer ID").value as! String
+                    let engineDescription: String = car.childSnapshot(forPath: "Engine Description").value as! String
+                    let makeDescription: String = car.childSnapshot(forPath: "Make Description").value as! String
+                    let mileage: String = car.childSnapshot(forPath: "Mileage").value as! String
+                    let modelDescription: String = car.childSnapshot(forPath: "Model Description").value as! String
+                    let numberOfCylinders: String = car.childSnapshot(forPath: "Number of Cylinders").value as! String
+                    let transmission: String = car.childSnapshot(forPath: "Transmission").value as! String
+                    let vin: String = car.childSnapshot(forPath: "VIN").value as! String
+                    let vehicleID: String = car.childSnapshot(forPath: "Vehicle ID").value as! String
+                    let vehicleDriveType: String = car.childSnapshot(forPath: "VehicleDriveType").value as! String
+                    let vehicleSubModel: String = car.childSnapshot(forPath: "VehicleSubModel").value as! String
+                    let year: String = car.childSnapshot(forPath: "Year").value as! String
+                    
+                    self.currentCar = vehicle(customerID: customerID, engineDescription: engineDescription, makeDescription: makeDescription, mileage: mileage, modelDescription: modelDescription, numberOfCylinders: numberOfCylinders, transmission: transmission, vin: vin, vehicleID: vehicleID, vehicleDriveType: vehicleDriveType, vehicleSubModel: vehicleSubModel, year: year)
+                    self.currentID = customerID
+                }
+            }
+        }
+        return currentCar
+    }
 }
 
 struct customer: Hashable, Codable {

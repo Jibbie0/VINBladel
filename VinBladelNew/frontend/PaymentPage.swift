@@ -111,6 +111,9 @@ struct PaymentPage: View {
                 }
                 .frame(width: UIScreen.main.bounds.width / 2, height: 200)
             }
+            NavigationLink("Go To Summary Page") {
+                Summary_Page()
+            }
         }
     }
 }

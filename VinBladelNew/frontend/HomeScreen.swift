@@ -14,7 +14,7 @@ struct HomeScreen: View {
             NavigationStack {
                 Image("Motorist.org")
                     .resizable()
-                    .frame(width: geo.size.width * 0.9)
+                    .frame(width: geo.size.width * 0.5)
                 Spacer()
                 VStack {
                     NavigationLink(destination: ScanVinPage()) {

@@ -15,7 +15,7 @@ struct ScanVinPage: View {
         Button {
         
         } label: {
-        
+        Text("Open Camera")
         }
         Image("Camera")
     }

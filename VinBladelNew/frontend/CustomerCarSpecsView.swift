@@ -13,22 +13,30 @@ struct CustomerCarSpecsView: View {
     let firstName: String
     let lastName: String
     var body: some View {
-        VStack {
-            Text("\(lastName), \(firstName)")
-                .font(.title)
-            List {
-                Text("VIN: \(customerCar.vin)")
-                Text("Make: \(customerCar.makeDescription)")
-                Text("Model: \(customerCar.modelDescription)")
-                Text("Submodel: \(customerCar.vehicleSubModel)")
-                Text("Model Year: \(customerCar.year)")
-                Text("Engine (L) \(customerCar.engineDescription)")
-                Text("Cylinders: \(customerCar.numberOfCylinders)")
-                Text("Transmission: \(customerCar.transmission)")
-                Text("Drive Type: \(customerCar.vehicleDriveType)")
-                Text("Mileage: \(customerCar.mileage)")
-            }
+        List {
+            Text("VIN: \(customerCar.vin)")
+                .font(.system(size: 13))
+            Text("Make: \(customerCar.makeDescription)")
+                .font(.system(size: 13))
+            Text("Model: \(customerCar.modelDescription)")
+                .font(.system(size: 13))
+            Text("Submodel: \(customerCar.vehicleSubModel)")
+                .font(.system(size: 13))
+            Text("Model Year: \(customerCar.year)")
+                .font(.system(size: 13))
+            Text("Engine (L) \(customerCar.engineDescription)")
+                .font(.system(size: 13))
+            Text("Cylinders: \(customerCar.numberOfCylinders)")
+                .font(.system(size: 13))
+            Text("Transmission: \(customerCar.transmission)")
+                .font(.system(size: 13))
+            Text("Drive Type: \(customerCar.vehicleDriveType)")
+                .font(.system(size: 13))
+            Text("Mileage: \(customerCar.mileage)")
+                .font(.system(size: 13))
         }
+        .navigationTitle("\(lastName), \(firstName)")
+        .font(.system(size: 23))
     }
 }
 

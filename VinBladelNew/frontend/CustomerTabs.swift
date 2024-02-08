@@ -22,10 +22,6 @@ struct CustomerTabs: View {
                     .tabItem {
                         Image(systemName: "tray.fill")
                     }
-                Summary_Page()
-                    .tabItem {
-                        Image(systemName: "paperplane.fill")
-                    }
                 InvoicePage()
                     .tabItem {
                         Image(systemName: "paperclip.circle.fill")

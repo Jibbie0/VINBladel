@@ -24,6 +24,7 @@ struct CustomerListView: View {
                 ForEach(firebaseClass.customers.filter { $0.firstName.contains(listText) || $0.lastName.contains(listText) }, id: \.self) { Customer in
                     NavigationLink("\(Customer.lastName), \(Customer.firstName)") {
                         CustomerCarsView(currentCustomer: Customer)
+                            .font(.system(size: 23))
                     }
                 }
             }

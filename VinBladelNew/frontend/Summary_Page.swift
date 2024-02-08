@@ -23,6 +23,7 @@ struct Summary_Page: View {
             List {
                 ForEach(firebaseClass.customers, id: \.self) { Customer in
                     Text("\(Customer.firstName)")
+                        .font(.system(size: 13))
                 }
             }
             .frame(height: 500)

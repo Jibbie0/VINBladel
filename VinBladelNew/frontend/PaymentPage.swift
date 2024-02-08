@@ -13,6 +13,9 @@ struct PaymentPage: View {
     @ObservedObject var firebaseClass = FirebaseClass()
     @State var currentPart: String = ""
     @State var parts:[partItem] = []
+    @State var showingAlert: Bool = false
+    @State var alertField: String = ""
+    @State var showingEditAlert: Bool = false
     var body: some View {
         VStack {
             VStack {
@@ -25,6 +28,35 @@ struct PaymentPage: View {
                     TableColumn("Description", value: \.description)
                     TableColumn("Price", value: \.price)
                     TableColumn("Total", value: \.total)
+                    TableColumn("Edit") { Identifiable in
+                        Button("Edit") {
+                            showingEditAlert.toggle()
+                        }
+                        .alert("Edit", isPresented: $showingEditAlert) {
+                            TextField("Quantity", text: $alertField)
+                            HStack {
+                                Button("Delete") {
+                                    alertField = ""
+                                    for i in parts.indices {
+                                        if parts[i].id == Identifiable.id {
+                                            parts.remove(at: i)
+                                        }
+                                    }
+                                }
+                                .foregroundStyle(.red)
+                                Button("OK") {
+                                    for i in parts.indices {
+                                        if parts[i].id == Identifiable.id {
+                                            let total = (Int(alertField) ?? 1) * (Int(parts[i].price) ?? 1)
+                                            parts[i].quantity = alertField
+                                            parts[i].total = String(total)
+                                        }
+                                    }
+                                    alertField = ""
+                                }
+                            }
+                        }
+                    }
                 }
             }
             HStack {
@@ -54,12 +86,21 @@ struct PaymentPage: View {
                     List {
                         ForEach(firebaseClass.currentPartWork, id: \.self) { work in
                             Button(action: {
-                                var newPart: partItem = partItem(quantity: "\(1)", description: "\(work.partWork)", price: "\(work.price)", total: "\(work.price)")
-                                
-                                parts.append(newPart)
+                                showingAlert.toggle()
                             }, label: {
                                 Text("\(work.partWork): $\(work.price)")
                             })
+                            .alert("Add \(work.partWork)", isPresented: $showingAlert) {
+                                TextField("Quantity", text: $alertField)
+                                Button("Add") {
+                                    let totalPrice = (Int(alertField) ?? 1) * Int(work.price)
+                                    let newPart: partItem = partItem(quantity: "\(alertField)", description: "\(work.partWork)", price: "\(work.price)", total: "\(totalPrice)")
+
+                                    parts.append(newPart)
+                                    
+                                    alertField = ""
+                                }
+                            }
                         }
                     }
                     .scrollContentBackground(.hidden)
@@ -76,10 +117,10 @@ struct PaymentPage: View {
 
 struct partItem: Identifiable {
     let id = UUID()
-    let quantity: String
+    var quantity: String
     let description: String
     let price: String
-    let total: String
+    var total: String
 }
 
 #Preview {

@@ -17,6 +17,7 @@ struct CustomerCarsView: View {
                 if car.customerID == currentCustomer.id {
                     NavigationLink("\(car.year) \(car.modelDescription)") {
                         CustomerTabs(customerCar: car, firstName: currentCustomer.firstName, lastName: currentCustomer.lastName)
+                            .font(.system(size: 23))
                     }
                 }
             }

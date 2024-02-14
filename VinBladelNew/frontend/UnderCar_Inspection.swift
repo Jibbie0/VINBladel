@@ -11,6 +11,8 @@ import SwiftUI
 
 struct UnderCarView: View {
     var body: some View {
-        Image("ColorsMeaning")
+        Image("Colors")
+            .resizable()
+            .frame(width: 500, height: 50)
     }
 }

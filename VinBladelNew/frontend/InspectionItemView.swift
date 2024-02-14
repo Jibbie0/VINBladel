@@ -9,22 +9,22 @@ import Foundation
 import SwiftUI
 
 struct InspectionItem: View {
-    @State var buttonOne: Bool = false
-    @State var buttonTwo: Bool = false
-    @State var buttonThree: Bool = false
     let title: String
     var body: some View {
         HStack {
             Text(title)
-            InspectionButton(buttonPress: $buttonOne)
-            InspectionButton(buttonPress: $buttonTwo)
-            InspectionButton(buttonPress: $buttonThree)
+                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                .frame(width: 150)
+            InspectionButton()
+            InspectionButton()
+            InspectionButton()
+            Spacer()
         }
     }
 }
 
 struct InspectionButton: View {
-    @Binding var buttonPress: Bool
+    @State var buttonPress: Bool = false
     var body: some View {
         Button(action: {
             buttonPress.toggle()
@@ -35,6 +35,7 @@ struct InspectionButton: View {
                     .foregroundStyle(.white)
                     .border(Color.black, width: 1)
                 Text(buttonPress ? "X" : "")
+                    .foregroundStyle(.black)
             }
         })
     }

@@ -11,6 +11,8 @@ import SwiftUI
 
 struct MultipointView: View {
     var body: some View {
-        Image("ColorsMeaning")
+        Image("Colors")
+            .resizable()
+            .frame(width: 700, height: 70)
     }
 }

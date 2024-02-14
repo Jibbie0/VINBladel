@@ -11,6 +11,8 @@ import SwiftUI
 
 struct BrakesView: View {
     var body: some View {
-        Text("Brakes Page")
+        Image("Colors")
+            .resizable()
+            .frame(width: 500, height: 50)
     }
 }

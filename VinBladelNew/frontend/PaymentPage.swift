@@ -17,7 +17,7 @@ struct PaymentPage: View {
     @State var alertField: String = ""
     @State var showingEditAlert: Bool = false
     var body: some View {
-        VStack {
+        NavigationStack {
             VStack {
                 NavigationLink(destination: Summary_Page()) {
                     Text("Continue to Summary")
@@ -111,7 +111,24 @@ struct PaymentPage: View {
                             }
                         }
                     }
-                    .scrollContentBackground(.hidden)
+                }
+                HStack {
+                    VStack {
+                        Rectangle()
+                            .foregroundStyle(.orange)
+                            .frame(width: 5000, height: 8, alignment: .center)
+                        Picker("Work", selection: $currentPart, content: {
+                            ForEach(firebaseClass.parts, id: \.self) { part in
+                                Text("\(part)")
+                            }
+                        })
+                        .padding()
+                        .pickerStyle(.wheel)
+                        .onChange(of: currentPart) {
+                            firebaseClass.pullCurrentPart(curPart: currentPart)
+                        }
+                    }
+                    .frame(width: UIScreen.main.bounds.width / 2, height: 200)
                     .padding()
                     Rectangle()
                         .foregroundStyle(.orange)

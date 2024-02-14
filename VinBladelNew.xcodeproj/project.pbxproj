@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045B5BCD2B7D224F002940FF /* InspectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B5BCC2B7D224F002940FF /* InspectionItemView.swift */; };
+		045B5BCF2B7D24FC002940FF /* InspectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B5BCE2B7D24FC002940FF /* InspectionListView.swift */; };
 		04AB35422B5B386900BCC19D /* VinBladelNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB35412B5B386900BCC19D /* VinBladelNewApp.swift */; };
 		04AB35442B5B386900BCC19D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB35432B5B386900BCC19D /* ContentView.swift */; };
 		04AB35462B5B386B00BCC19D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AB35452B5B386B00BCC19D /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045B5BCC2B7D224F002940FF /* InspectionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionItemView.swift; sourceTree = "<group>"; };
+		045B5BCE2B7D24FC002940FF /* InspectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionListView.swift; sourceTree = "<group>"; };
 		04AB353E2B5B386900BCC19D /* VinBladelNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinBladelNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AB35412B5B386900BCC19D /* VinBladelNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinBladelNewApp.swift; sourceTree = "<group>"; };
 		04AB35432B5B386900BCC19D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				C9C41DCA2B6D504B0007BC3E /* ScanVinPage.swift */,
 				C9C41DCC2B6D50570007BC3E /* ManualVinPage.swift */,
 				C9E913012B728EDE001125AF /* HomeScreen.swift */,
+				045B5BCC2B7D224F002940FF /* InspectionItemView.swift */,
+				045B5BCE2B7D24FC002940FF /* InspectionListView.swift */,
 			);
 			path = frontend;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045B5BCF2B7D24FC002940FF /* InspectionListView.swift in Sources */,
 				04AB35442B5B386900BCC19D /* ContentView.swift in Sources */,
 				C9C41DCB2B6D504B0007BC3E /* ScanVinPage.swift in Sources */,
 				04C1A9242B6AB2B800BC9F63 /* PaymentPage.swift in Sources */,
@@ -311,6 +318,7 @@
 				04AB35422B5B386900BCC19D /* VinBladelNewApp.swift in Sources */,
 				04AB35922B62BD5300BCC19D /* CustomerCarsView.swift in Sources */,
 				04AB35942B62CA5900BCC19D /* CustomerCarSpecsView.swift in Sources */,
+				045B5BCD2B7D224F002940FF /* InspectionItemView.swift in Sources */,
 				B177BA242B60204C0064FFA8 /* General_Inspection.swift in Sources */,
 				C1A51DBE2B62C6B6000D0399 /* Summary_Page.swift in Sources */,
 				B177BA262B60205E0064FFA8 /* Tire_Inspection.swift in Sources */,
@@ -450,7 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VinBladelNew/Preview Content\"";
-				DEVELOPMENT_TEAM = 9F53D3M6K3;
+				DEVELOPMENT_TEAM = 53573T622Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -478,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VinBladelNew/Preview Content\"";
-				DEVELOPMENT_TEAM = 9F53D3M6K3;
+				DEVELOPMENT_TEAM = 53573T622Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

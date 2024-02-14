@@ -19,7 +19,15 @@ struct PaymentPage: View {
     var body: some View {
         VStack {
             VStack {
-                Text("\(firebaseClass.currentPerson.lastName), \(firebaseClass.currentPerson.firstName)")
+                NavigationLink(destination: Summary_Page()) {
+                    Text("Continue to Summary")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.orange)
+                        .foregroundStyle(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 3.0))
+                        .bold()
+                }
                 Rectangle()
                     .foregroundStyle(.orange)
                     .frame(width: 5000, height: 10)
@@ -81,8 +89,8 @@ struct PaymentPage: View {
                     .foregroundStyle(.orange)
                     .frame(width: 10, height: 200)
                 VStack {
-    //                Spacer()
-    //                    .frame(height: 40)
+                    //                Spacer()
+                    //                    .frame(height: 40)
                     List {
                         ForEach(firebaseClass.currentPartWork, id: \.self) { work in
                             Button(action: {
@@ -95,7 +103,7 @@ struct PaymentPage: View {
                                 Button("Add") {
                                     let totalPrice = (Int(alertField) ?? 1) * Int(work.price)
                                     let newPart: partItem = partItem(quantity: "\(alertField)", description: "\(work.partWork)", price: "\(work.price)", total: "\(totalPrice)")
-
+                                    
                                     parts.append(newPart)
                                     
                                     alertField = ""
@@ -111,12 +119,10 @@ struct PaymentPage: View {
                 }
                 .frame(width: UIScreen.main.bounds.width / 2, height: 200)
             }
-            NavigationLink("Go To Summary Page") {
-                Summary_Page()
-            }
         }
     }
 }
+
 
 struct partItem: Identifiable {
     let id = UUID()

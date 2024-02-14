@@ -11,6 +11,6 @@ import SwiftUI
 
 struct BrakesView: View {
     var body: some View {
-        Image("ColorsMeaning")
+        Text("Brakes Page")
     }
 }

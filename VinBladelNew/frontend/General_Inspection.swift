@@ -13,6 +13,9 @@ struct GeneralView: View {
     var body: some View {
         VStack {
             InspectionList(inspectionList: inspectionList)
+            Image("Colors")
+                        .resizable()
+                        .frame(width: 500, height: 50)
         }
     }
 }

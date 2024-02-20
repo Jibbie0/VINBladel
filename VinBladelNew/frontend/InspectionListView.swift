@@ -14,7 +14,7 @@ struct InspectionList: View {
         VStack {
             HStack {
                 Spacer()
-                    .frame(width: 155)
+                    .frame(width: 250)
                 Text("OK")
                     .foregroundStyle(.green)
                 Text("SUG")
@@ -22,7 +22,10 @@ struct InspectionList: View {
                 Text("REQ")
                     .foregroundStyle(.red)
                 Spacer()
+                    .frame(width: 135)
+                Text("Why Recommend")
             }
+            .font(.subheadline)
             .font(.caption)
             ForEach(inspectionList, id: \.self) { item in
                 InspectionItem(title: item)

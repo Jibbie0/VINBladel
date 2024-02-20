@@ -63,8 +63,8 @@ struct Summary_Page: View {
                         }
                         HStack {
                             Spacer()
-                            Button("Send Email & Save") {
-                                // code to save and send email
+                            NavigationLink("Send Email & Save") {
+                                General_Inspection()
                             }
                             .frame(width: geo.size.width * 0.3, height: 20)
                             .padding()

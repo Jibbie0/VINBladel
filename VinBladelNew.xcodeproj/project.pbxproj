@@ -175,14 +175,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C10051882B850BFE0085F882 /* inpection_pages */ = {
+			isa = PBXGroup;
+			children = (
+				B177BA252B60205E0064FFA8 /* Tire_Inspection.swift */,
+				B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */,
+				B177BA232B60204C0064FFA8 /* General_Inspection.swift */,
+				B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */,
+				B177BA292B6020820064FFA8 /* UnderCar_Inspection.swift */,
+			);
+			path = inpection_pages;
+			sourceTree = "<group>";
+		};
 		C98F5E0D2B6026BE00ED07DE /* frontend */ = {
 			isa = PBXGroup;
 			children = (
-				B177BA232B60204C0064FFA8 /* General_Inspection.swift */,
-				B177BA252B60205E0064FFA8 /* Tire_Inspection.swift */,
-				B177BA272B6020720064FFA8 /* MultiPoint_Inspection.swift */,
-				B177BA292B6020820064FFA8 /* UnderCar_Inspection.swift */,
-				B177BA2B2B6020980064FFA8 /* Brakes_Inspection.swift */,
+				C10051882B850BFE0085F882 /* inpection_pages */,
 				04AB358F2B62BBB500BCC19D /* CustomerListView.swift */,
 				04AB35912B62BD5300BCC19D /* CustomerCarsView.swift */,
 				04AB35932B62CA5900BCC19D /* CustomerCarSpecsView.swift */,
@@ -464,7 +472,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +500,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

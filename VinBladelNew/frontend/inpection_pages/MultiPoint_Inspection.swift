@@ -6,10 +6,9 @@
 //
 
 import Foundation
-
 import SwiftUI
 
-struct MultipointView: View {
+struct MultiPoint_Inspection: View {
     var body: some View {
         Image("Colors")
             .resizable()

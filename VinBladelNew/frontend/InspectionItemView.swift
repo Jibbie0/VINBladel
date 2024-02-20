@@ -10,14 +10,23 @@ import SwiftUI
 
 struct InspectionItem: View {
     let title: String
+    @State var notesField: String = ""
     var body: some View {
         HStack {
-            Text(title)
-                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-                .frame(width: 150)
-            InspectionButton()
-            InspectionButton()
-            InspectionButton()
+            HStack {
+                Text(title)
+                    .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 15))
+                    .frame(width: 150)
+                    .font(.title3)
+                InspectionButton()
+                InspectionButton()
+                InspectionButton()
+                TextField("", text: $notesField)
+                    .frame(width: 200)
+                    .multilineTextAlignment(.center)
+            }
+            .border(Color.black, width: 1)
+            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
             Spacer()
         }
     }
@@ -31,9 +40,11 @@ struct InspectionButton: View {
         }, label: {
             ZStack {
                 Rectangle()
-                    .frame(width: 20, height: 20)
+                    .frame(width: 25, height: 25)
+                    .foregroundStyle(.green)
+                Rectangle()
+                    .frame(width: 15, height: 15)
                     .foregroundStyle(.white)
-                    .border(Color.black, width: 1)
                 Text(buttonPress ? "X" : "")
                     .foregroundStyle(.black)
             }

@@ -35,7 +35,7 @@ struct InspectionItem: View {
                             }
                         }
                 }
-                TextField("", text: $notesField)
+                TextField("Notes...", text: $notesField)
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.center)
             }

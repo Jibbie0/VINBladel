@@ -62,6 +62,15 @@ struct Summary_Page: View {
                             Spacer()
                         }
                         HStack {
+                            NavigationLink(destination: Main_Inspection()) {
+                                Text("Main Inspection")
+                                    .frame(width: 0.8)
+                                    .padding()
+                                    .background(Color.orange)
+                                    .foregroundStyle(Color.white)
+                                    .clipShape(RoundedRectangle(cornerRadius: 3.0))
+                                    .bold()
+                            }
                             Spacer()
                             NavigationLink("Send Email & Save") {
                                 General_Inspection()

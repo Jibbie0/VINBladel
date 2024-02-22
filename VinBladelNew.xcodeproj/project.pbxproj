@@ -49,6 +49,7 @@
 		04C1A9262B6AB36700BC9F63 /* InvoicePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1A9252B6AB36700BC9F63 /* InvoicePage.swift */; };
 		04C1A9282B6AB39B00BC9F63 /* CarChecklistPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1A9272B6AB39B00BC9F63 /* CarChecklistPage.swift */; };
 		04CED16A2B6D4D2100351E95 /* FirebaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CED1692B6D4D2100351E95 /* FirebaseClass.swift */; };
+		B12D44872B87A9800046C6F6 /* MainInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12D44862B87A9800046C6F6 /* MainInspection.swift */; };
 		C1A51DBE2B62C6B6000D0399 /* Summary_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A51DBD2B62C6B6000D0399 /* Summary_Page.swift */; };
 		C1EA48C92B87A63000DAA6CF /* General_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA48C82B87A63000DAA6CF /* General_Inspection.swift */; };
 		C1EA48CB2B87A65800DAA6CF /* Brakes_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA48CA2B87A65800DAA6CF /* Brakes_Inspection.swift */; };
@@ -78,6 +79,7 @@
 		04C1A9252B6AB36700BC9F63 /* InvoicePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicePage.swift; sourceTree = "<group>"; };
 		04C1A9272B6AB39B00BC9F63 /* CarChecklistPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarChecklistPage.swift; sourceTree = "<group>"; };
 		04CED1692B6D4D2100351E95 /* FirebaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClass.swift; sourceTree = "<group>"; };
+		B12D44862B87A9800046C6F6 /* MainInspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInspection.swift; sourceTree = "<group>"; };
 		C1A51DBD2B62C6B6000D0399 /* Summary_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary_Page.swift; sourceTree = "<group>"; };
 		C1EA48C82B87A63000DAA6CF /* General_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General_Inspection.swift; sourceTree = "<group>"; };
 		C1EA48CA2B87A65800DAA6CF /* Brakes_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brakes_Inspection.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				C1EA48CA2B87A65800DAA6CF /* Brakes_Inspection.swift */,
 				C1EA48C82B87A63000DAA6CF /* General_Inspection.swift */,
+				B12D44862B87A9800046C6F6 /* MainInspection.swift */,
 				C1EA48CC2B87A67200DAA6CF /* UnderCar_Inpection.swift */,
 				C1EA48CE2B87A70700DAA6CF /* MultiPoint_Inspection.swift */,
 				C1EA48D02B87A73300DAA6CF /* Tire_Inspection.swift */,
@@ -324,6 +327,7 @@
 				C1EA48D12B87A73300DAA6CF /* Tire_Inspection.swift in Sources */,
 				04C1A9262B6AB36700BC9F63 /* InvoicePage.swift in Sources */,
 				C1EA48CB2B87A65800DAA6CF /* Brakes_Inspection.swift in Sources */,
+				B12D44872B87A9800046C6F6 /* MainInspection.swift in Sources */,
 				C9E913022B728EDE001125AF /* HomeScreen.swift in Sources */,
 				C1EA48CD2B87A67200DAA6CF /* UnderCar_Inpection.swift in Sources */,
 				04AB35422B5B386900BCC19D /* VinBladelNewApp.swift in Sources */,

@@ -14,14 +14,9 @@ struct General_Inspection: View {
         VStack {
             InspectionList(inspectionList: inspectionList)
             Image("ColorsMeaning")
-<<<<<<< HEAD:VinBladelNew/frontend/General_Inspection.swift
                 .resizable()
                 .frame(width: 500, height: 50)
                 .padding()
-=======
-                        .resizable()
-                        .frame(width: 700, height: 70)
->>>>>>> main:VinBladelNew/frontend/inpection_pages/General_Inspection.swift
         }
     }
 }

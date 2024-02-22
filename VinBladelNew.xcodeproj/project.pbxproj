@@ -49,17 +49,12 @@
 		04C1A9262B6AB36700BC9F63 /* InvoicePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1A9252B6AB36700BC9F63 /* InvoicePage.swift */; };
 		04C1A9282B6AB39B00BC9F63 /* CarChecklistPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1A9272B6AB39B00BC9F63 /* CarChecklistPage.swift */; };
 		04CED16A2B6D4D2100351E95 /* FirebaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CED1692B6D4D2100351E95 /* FirebaseClass.swift */; };
-		04D817942B85163F00074C03 /* General_Inspection.swift~HEAD in Resources */ = {isa = PBXBuildFile; fileRef = 04D8178A2B85163F00074C03 /* General_Inspection.swift~HEAD */; };
-		04D817952B85163F00074C03 /* Brakes_Inspection.swift~HEAD in Resources */ = {isa = PBXBuildFile; fileRef = 04D8178B2B85163F00074C03 /* Brakes_Inspection.swift~HEAD */; };
-		04D817962B85163F00074C03 /* UnderCar_Inspection.swift~HEAD in Resources */ = {isa = PBXBuildFile; fileRef = 04D8178C2B85163F00074C03 /* UnderCar_Inspection.swift~HEAD */; };
-		04D817972B85163F00074C03 /* Brakes_Inspection.swift~main in Resources */ = {isa = PBXBuildFile; fileRef = 04D8178D2B85163F00074C03 /* Brakes_Inspection.swift~main */; };
-		04D817982B85163F00074C03 /* General_Inspection.swift~main in Resources */ = {isa = PBXBuildFile; fileRef = 04D8178E2B85163F00074C03 /* General_Inspection.swift~main */; };
-		04D817992B85163F00074C03 /* UnderCar_Inspection.swift~main in Resources */ = {isa = PBXBuildFile; fileRef = 04D8178F2B85163F00074C03 /* UnderCar_Inspection.swift~main */; };
-		04D8179A2B85163F00074C03 /* MultiPoint_Inspection.swift~HEAD in Resources */ = {isa = PBXBuildFile; fileRef = 04D817902B85163F00074C03 /* MultiPoint_Inspection.swift~HEAD */; };
-		04D8179B2B85163F00074C03 /* Tire_Inspection.swift~main in Resources */ = {isa = PBXBuildFile; fileRef = 04D817912B85163F00074C03 /* Tire_Inspection.swift~main */; };
-		04D8179C2B85163F00074C03 /* Tire_Inspection.swift~HEAD in Resources */ = {isa = PBXBuildFile; fileRef = 04D817922B85163F00074C03 /* Tire_Inspection.swift~HEAD */; };
-		04D8179D2B85163F00074C03 /* MultiPoint_Inspection.swift~main in Resources */ = {isa = PBXBuildFile; fileRef = 04D817932B85163F00074C03 /* MultiPoint_Inspection.swift~main */; };
 		C1A51DBE2B62C6B6000D0399 /* Summary_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A51DBD2B62C6B6000D0399 /* Summary_Page.swift */; };
+		C1EA48C92B87A63000DAA6CF /* General_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA48C82B87A63000DAA6CF /* General_Inspection.swift */; };
+		C1EA48CB2B87A65800DAA6CF /* Brakes_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA48CA2B87A65800DAA6CF /* Brakes_Inspection.swift */; };
+		C1EA48CD2B87A67200DAA6CF /* UnderCar_Inpection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA48CC2B87A67200DAA6CF /* UnderCar_Inpection.swift */; };
+		C1EA48CF2B87A70700DAA6CF /* MultiPoint_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA48CE2B87A70700DAA6CF /* MultiPoint_Inspection.swift */; };
+		C1EA48D12B87A73300DAA6CF /* Tire_Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA48D02B87A73300DAA6CF /* Tire_Inspection.swift */; };
 		C98F5E0C2B6026BB00ED07DE /* backend in Resources */ = {isa = PBXBuildFile; fileRef = C98F5E0B2B6026BB00ED07DE /* backend */; };
 		C9C41DCB2B6D504B0007BC3E /* ScanVinPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C41DCA2B6D504B0007BC3E /* ScanVinPage.swift */; };
 		C9C41DCD2B6D50580007BC3E /* ManualVinPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C41DCC2B6D50570007BC3E /* ManualVinPage.swift */; };
@@ -83,17 +78,12 @@
 		04C1A9252B6AB36700BC9F63 /* InvoicePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicePage.swift; sourceTree = "<group>"; };
 		04C1A9272B6AB39B00BC9F63 /* CarChecklistPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarChecklistPage.swift; sourceTree = "<group>"; };
 		04CED1692B6D4D2100351E95 /* FirebaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClass.swift; sourceTree = "<group>"; };
-		04D8178A2B85163F00074C03 /* General_Inspection.swift~HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "General_Inspection.swift~HEAD"; sourceTree = "<group>"; };
-		04D8178B2B85163F00074C03 /* Brakes_Inspection.swift~HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Brakes_Inspection.swift~HEAD"; sourceTree = "<group>"; };
-		04D8178C2B85163F00074C03 /* UnderCar_Inspection.swift~HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UnderCar_Inspection.swift~HEAD"; sourceTree = "<group>"; };
-		04D8178D2B85163F00074C03 /* Brakes_Inspection.swift~main */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Brakes_Inspection.swift~main"; sourceTree = "<group>"; };
-		04D8178E2B85163F00074C03 /* General_Inspection.swift~main */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "General_Inspection.swift~main"; sourceTree = "<group>"; };
-		04D8178F2B85163F00074C03 /* UnderCar_Inspection.swift~main */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UnderCar_Inspection.swift~main"; sourceTree = "<group>"; };
-		04D817902B85163F00074C03 /* MultiPoint_Inspection.swift~HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MultiPoint_Inspection.swift~HEAD"; sourceTree = "<group>"; };
-		04D817912B85163F00074C03 /* Tire_Inspection.swift~main */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Tire_Inspection.swift~main"; sourceTree = "<group>"; };
-		04D817922B85163F00074C03 /* Tire_Inspection.swift~HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Tire_Inspection.swift~HEAD"; sourceTree = "<group>"; };
-		04D817932B85163F00074C03 /* MultiPoint_Inspection.swift~main */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MultiPoint_Inspection.swift~main"; sourceTree = "<group>"; };
 		C1A51DBD2B62C6B6000D0399 /* Summary_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary_Page.swift; sourceTree = "<group>"; };
+		C1EA48C82B87A63000DAA6CF /* General_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General_Inspection.swift; sourceTree = "<group>"; };
+		C1EA48CA2B87A65800DAA6CF /* Brakes_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brakes_Inspection.swift; sourceTree = "<group>"; };
+		C1EA48CC2B87A67200DAA6CF /* UnderCar_Inpection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderCar_Inpection.swift; sourceTree = "<group>"; };
+		C1EA48CE2B87A70700DAA6CF /* MultiPoint_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPoint_Inspection.swift; sourceTree = "<group>"; };
+		C1EA48D02B87A73300DAA6CF /* Tire_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tire_Inspection.swift; sourceTree = "<group>"; };
 		C98F5E0B2B6026BB00ED07DE /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backend; sourceTree = "<group>"; };
 		C9C41DCA2B6D504B0007BC3E /* ScanVinPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVinPage.swift; sourceTree = "<group>"; };
 		C9C41DCC2B6D50570007BC3E /* ManualVinPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualVinPage.swift; sourceTree = "<group>"; };
@@ -188,16 +178,11 @@
 		04D817892B85163F00074C03 /* inpection_pages */ = {
 			isa = PBXGroup;
 			children = (
-				04D8178A2B85163F00074C03 /* General_Inspection.swift~HEAD */,
-				04D8178B2B85163F00074C03 /* Brakes_Inspection.swift~HEAD */,
-				04D8178C2B85163F00074C03 /* UnderCar_Inspection.swift~HEAD */,
-				04D8178D2B85163F00074C03 /* Brakes_Inspection.swift~main */,
-				04D8178E2B85163F00074C03 /* General_Inspection.swift~main */,
-				04D8178F2B85163F00074C03 /* UnderCar_Inspection.swift~main */,
-				04D817902B85163F00074C03 /* MultiPoint_Inspection.swift~HEAD */,
-				04D817912B85163F00074C03 /* Tire_Inspection.swift~main */,
-				04D817922B85163F00074C03 /* Tire_Inspection.swift~HEAD */,
-				04D817932B85163F00074C03 /* MultiPoint_Inspection.swift~main */,
+				C1EA48CA2B87A65800DAA6CF /* Brakes_Inspection.swift */,
+				C1EA48C82B87A63000DAA6CF /* General_Inspection.swift */,
+				C1EA48CC2B87A67200DAA6CF /* UnderCar_Inpection.swift */,
+				C1EA48CE2B87A70700DAA6CF /* MultiPoint_Inspection.swift */,
+				C1EA48D02B87A73300DAA6CF /* Tire_Inspection.swift */,
 			);
 			path = inpection_pages;
 			sourceTree = "<group>";
@@ -313,20 +298,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D8179D2B85163F00074C03 /* MultiPoint_Inspection.swift~main in Resources */,
-				04D817962B85163F00074C03 /* UnderCar_Inspection.swift~HEAD in Resources */,
 				04AB35492B5B386B00BCC19D /* Preview Assets.xcassets in Resources */,
-				04D817982B85163F00074C03 /* General_Inspection.swift~main in Resources */,
-				04D8179A2B85163F00074C03 /* MultiPoint_Inspection.swift~HEAD in Resources */,
 				04AB35462B5B386B00BCC19D /* Assets.xcassets in Resources */,
-				04D817952B85163F00074C03 /* Brakes_Inspection.swift~HEAD in Resources */,
 				04AB35502B601ED900BCC19D /* GoogleService-Info.plist in Resources */,
-				04D8179C2B85163F00074C03 /* Tire_Inspection.swift~HEAD in Resources */,
-				04D8179B2B85163F00074C03 /* Tire_Inspection.swift~main in Resources */,
-				04D817972B85163F00074C03 /* Brakes_Inspection.swift~main in Resources */,
 				C98F5E0C2B6026BB00ED07DE /* backend in Resources */,
-				04D817942B85163F00074C03 /* General_Inspection.swift~HEAD in Resources */,
-				04D817992B85163F00074C03 /* UnderCar_Inspection.swift~main in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,11 +316,16 @@
 				04AB35442B5B386900BCC19D /* ContentView.swift in Sources */,
 				C9C41DCB2B6D504B0007BC3E /* ScanVinPage.swift in Sources */,
 				04C1A9242B6AB2B800BC9F63 /* PaymentPage.swift in Sources */,
+				C1EA48C92B87A63000DAA6CF /* General_Inspection.swift in Sources */,
 				04AB35902B62BBB500BCC19D /* CustomerListView.swift in Sources */,
+				C1EA48CF2B87A70700DAA6CF /* MultiPoint_Inspection.swift in Sources */,
 				04C1A9222B6AB00900BC9F63 /* CustomerTabs.swift in Sources */,
 				04CED16A2B6D4D2100351E95 /* FirebaseClass.swift in Sources */,
+				C1EA48D12B87A73300DAA6CF /* Tire_Inspection.swift in Sources */,
 				04C1A9262B6AB36700BC9F63 /* InvoicePage.swift in Sources */,
+				C1EA48CB2B87A65800DAA6CF /* Brakes_Inspection.swift in Sources */,
 				C9E913022B728EDE001125AF /* HomeScreen.swift in Sources */,
+				C1EA48CD2B87A67200DAA6CF /* UnderCar_Inpection.swift in Sources */,
 				04AB35422B5B386900BCC19D /* VinBladelNewApp.swift in Sources */,
 				04AB35922B62BD5300BCC19D /* CustomerCarsView.swift in Sources */,
 				04AB35942B62CA5900BCC19D /* CustomerCarSpecsView.swift in Sources */,

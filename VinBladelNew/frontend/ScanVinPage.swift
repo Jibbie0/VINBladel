@@ -11,7 +11,7 @@ import SwiftUI
 struct ScanVinPage: View {
     var body: some View {
         Text("Scan VIN Page")
-            .font(.system(size: 20))
+            .font(.system(size: 30))
         Button {
         
         } label: {

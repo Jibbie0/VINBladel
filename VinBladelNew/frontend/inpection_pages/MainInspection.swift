@@ -16,6 +16,7 @@ struct Main_Inspection: View {
                 Text("Scan Vin")
                     .frame(width: 0.8)
                     .padding()
+                    .background(Color.orange.opacity(0.8))
                     .clipShape(RoundedRectangle(cornerRadius: 3.0))
                     .bold()
             }
@@ -23,6 +24,7 @@ struct Main_Inspection: View {
                 Text("Scan Vin")
                     .frame(width: 0.8)
                     .padding()
+                    .background(Color.orange.opacity(0.8))
                     .clipShape(RoundedRectangle(cornerRadius: 3.0))
                     .bold()
             }
@@ -30,6 +32,7 @@ struct Main_Inspection: View {
                 Text("Scan Vin")
                     .frame(width: 0.8)
                     .padding()
+                    .background(Color.orange.opacity(0.8))
                     .clipShape(RoundedRectangle(cornerRadius: 3.0))
                     .bold()
                 
@@ -38,8 +41,7 @@ struct Main_Inspection: View {
                 Text("Scan Vin")
                     .frame(width: 0.8)
                     .padding()
-                    .background(Color.orange)
-                    .foregroundStyle(Color.white)
+                    .background(Color.orange.opacity(0.8))
                     .clipShape(RoundedRectangle(cornerRadius: 3.0))
                     .bold()
             }
@@ -47,6 +49,7 @@ struct Main_Inspection: View {
                 Text("Scan Vin")
                     .frame(width: 0.8)
                     .padding()
+                    .background(Color.orange.opacity(0.8))
                     .clipShape(RoundedRectangle(cornerRadius: 3.0))
                     .bold()
             }

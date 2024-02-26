@@ -33,7 +33,7 @@ struct CustomerCarSpecsView: View {
             Text("Drive Type: \(customerCar.vehicleDriveType)")
                 .font(.system(size: 15))
             Text("Mileage: \(customerCar.mileage)")
-                .font(.system(size: 155))
+                .font(.system(size: 15))
         }
         .navigationTitle("\(lastName), \(firstName)")
         .font(.system(size: 23))

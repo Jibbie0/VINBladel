@@ -16,8 +16,20 @@ struct UnderCar_Inspection: View {
                 InspectionList(inspectionList: inspectionList)
                 Image("ColorsMeaning")
                     .resizable()
-                    .frame(width: 500, height: 50)
+                    .frame(width: 700, height: 70)
                     .padding()
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
+                InspectionItem(title: "srousppdsihj")
             }
     }
 }

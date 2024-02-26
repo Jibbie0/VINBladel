@@ -20,7 +20,7 @@ struct General_Inspection: View {
                 ScrollView {
                     Image("ColorsMeaning")
                         .resizable()
-                        .frame(width: geo.size.width, height: 50)
+                        .frame(width: 700, height: 70)
                     InspectionItem(title: "srousppdsihj")
                     InspectionItem(title: "srousppdsihj")
                     InspectionItem(title: "srousppdsihj")

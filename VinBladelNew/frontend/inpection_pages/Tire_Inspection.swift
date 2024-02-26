@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import FirebaseDatabase
 import SwiftUI
 
 struct Tire_Inspection: View {
@@ -17,7 +17,7 @@ struct Tire_Inspection: View {
                 Image("ColorsMeaning")
                     .resizable()
                     .frame(width: 500, height: 50)
-                    .padding()
+                    .padding() 
             }
     }
 }

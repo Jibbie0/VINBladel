@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import FirebaseDatabase
 import SwiftUI
 
 struct MultiPoint_Inspection: View {

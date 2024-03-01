@@ -75,7 +75,7 @@ class FirebaseClass: ObservableObject {
         ref.child("parts").getData { myError, myDataSnapshot in
             for part in myDataSnapshot?.children.allObjects as! [DataSnapshot] {
                 let myPart: String = part.key
-                self.parts.append(myPart)
+                self.parts.append("\(myPart)")
             }
         }
     }
@@ -152,7 +152,8 @@ struct vehicle: Hashable, Codable {
     let year: String
 }
                                             
-struct partWork: Hashable, Codable {
+struct partWork: Hashable, Codable, Identifiable {
+    var id = UUID()
     let partWork: String
     let price: Int
 }

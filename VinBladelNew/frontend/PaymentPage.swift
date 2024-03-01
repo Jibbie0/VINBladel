@@ -113,26 +113,27 @@ struct PaymentPage: View {
                     }
                 }
                 HStack {
-                    VStack {
-                        Rectangle()
-                            .foregroundStyle(.orange)
-                            .frame(width: 5000, height: 8, alignment: .center)
-                        Picker("Work", selection: $currentPart, content: {
-                            ForEach(firebaseClass.parts, id: \.self) { part in
-                                Text("\(part)")
+                    List {
+                        ForEach(firebaseClass.currentPartWork) { part in
+                            Button {
+                                showingAlert.toggle()
+                            } label: {
+                                Text("\(part.partWork): $\(part.price)")
                             }
-                        })
-                        .padding()
-                        .pickerStyle(.wheel)
-                        .onChange(of: currentPart) {
-                            firebaseClass.pullCurrentPart(curPart: currentPart)
+                            .alert("Add \(part.partWork)", isPresented: $showingAlert) {
+                                TextField("Quantity", text: $alertField)
+                                Button("Add") {
+                                    let totalPrice = (Int(alertField) ?? 1) * Int(part.price)
+                                    let newPart: partItem = partItem(quantity: "\(alertField)", description: "\(part.partWork)", price: "\(part.price)", total: "\(totalPrice)")
+                                    
+                                    parts.append(newPart)
+                                    
+                                    alertField = ""
+                                }
+                            }
                         }
                     }
-                    .frame(width: UIScreen.main.bounds.width / 2, height: 200)
-                    .padding()
-                    Rectangle()
-                        .foregroundStyle(.orange)
-                        .frame(width: 5000, height: 8)
+                    .scrollContentBackground(.hidden)
                 }
                 .frame(width: UIScreen.main.bounds.width / 2, height: 200)
             }

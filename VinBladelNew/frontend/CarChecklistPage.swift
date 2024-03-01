@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CarChecklistPage: View {
     var body: some View {
-        Text("CarChecklist")
+        General_Inspection()
     }
 }
 

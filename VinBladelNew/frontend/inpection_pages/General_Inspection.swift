@@ -21,19 +21,10 @@ struct General_Inspection: View {
                 ScrollView {
                     Image("ColorsMeaning")
                         .resizable()
-                        .frame(width: 700, height: 70)
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
-                    InspectionItem(title: "srousppdsihj")
+                        .padding()
+                    ForEach(inspectionList, id: \.self) { item in
+                        InspectionItem(title: item)
+                    }
                 }
             }
         }

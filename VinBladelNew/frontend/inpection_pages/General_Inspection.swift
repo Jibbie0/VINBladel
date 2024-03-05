@@ -18,13 +18,12 @@ struct General_Inspection: View {
                     .font(.system(size: 27))
                     .bold()
                     .padding()
+                Image("ColorsMeaning")
+                    .resizable()
+                    .frame(width: 900, height: 90)
+                    .padding()
                 ScrollView {
-                    Image("ColorsMeaning")
-                        .resizable()
-                        .padding()
-                    ForEach(inspectionList, id: \.self) { item in
-                        InspectionItem(title: item)
-                    }
+                    InspectionList(inspectionList: inspectionList)
                 }
             }
         }

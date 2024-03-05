@@ -12,6 +12,7 @@ struct InspectionItem: View {
     let title: String
     @State var notesField: String = ""
     @State var buttonStates:[Bool] = [false, false, false]
+    @Binding var choices:[ChoiceStruct]
     var body: some View {
         HStack {
             HStack {
@@ -25,10 +26,13 @@ struct InspectionItem: View {
                             switch index {
                             case 0:
                                 buttonStates = [true, false, false]
+                                sendStateBack(choice: "OK")
                             case 1:
                                 buttonStates = [false, true, false]
+                                sendStateBack(choice: "SUG")
                             case 2:
                                 buttonStates = [false, false, true]
+                                sendStateBack(choice: "REQ")
                             default:
                                 buttonStates = [false, false, false]
                                 print("ERROR")
@@ -41,6 +45,13 @@ struct InspectionItem: View {
             }
             .border(Color.black, width: 1)
             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+        }
+    }
+    func sendStateBack(choice: String) {
+        for index in choices.indices {
+            if choices[index].title == title {
+                choices[index].choice = choice
+            }
         }
     }
 }
@@ -73,8 +84,4 @@ struct InspectionButton: View {
             return .black
         }
     }
-}
-
-#Preview {
-    InspectionItem(title: "Wiper Baldes")
 }

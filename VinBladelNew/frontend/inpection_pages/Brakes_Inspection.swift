@@ -13,12 +13,11 @@ struct Brakes_Inspection: View {
     var body: some View {
         let inspectionList: [String] = ["Battery Test", "Battery Accessories", "Start/Charge", "Belts", "Belt Tensioner", "Spark Plugs", "Fuel Filter", "Ignition  Wires", "Valvee Cover Gasket", "Power Steering Hose", "Timing Belt", "Transfer Case/Differential Fliud", "Transmission Fluid"]
             VStack {
-                InspectionList(inspectionList: inspectionList)
+                InspectionList(inspectionList: inspectionList, arrayTitle: "brakes")
                 Image("ColorsMeaning")
                     .resizable()
                     .frame(width: 700, height: 70)
                     .padding()
-                InspectionList(inspectionList: inspectionList)
             }
     }
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		045B5BCD2B7D224F002940FF /* InspectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B5BCC2B7D224F002940FF /* InspectionItemView.swift */; };
 		045B5BCF2B7D24FC002940FF /* InspectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B5BCE2B7D24FC002940FF /* InspectionListView.swift */; };
+		049729752B97845E00AA17B9 /* InspectionDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049729742B97845E00AA17B9 /* InspectionDataClass.swift */; };
 		04AB35422B5B386900BCC19D /* VinBladelNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB35412B5B386900BCC19D /* VinBladelNewApp.swift */; };
 		04AB35442B5B386900BCC19D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB35432B5B386900BCC19D /* ContentView.swift */; };
 		04AB35462B5B386B00BCC19D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AB35452B5B386B00BCC19D /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 /* Begin PBXFileReference section */
 		045B5BCC2B7D224F002940FF /* InspectionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionItemView.swift; sourceTree = "<group>"; };
 		045B5BCE2B7D24FC002940FF /* InspectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionListView.swift; sourceTree = "<group>"; };
+		049729742B97845E00AA17B9 /* InspectionDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionDataClass.swift; sourceTree = "<group>"; };
 		04AB353E2B5B386900BCC19D /* VinBladelNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinBladelNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AB35412B5B386900BCC19D /* VinBladelNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinBladelNewApp.swift; sourceTree = "<group>"; };
 		04AB35432B5B386900BCC19D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				04CED1692B6D4D2100351E95 /* FirebaseClass.swift */,
 				04AB35452B5B386B00BCC19D /* Assets.xcassets */,
 				04AB35472B5B386B00BCC19D /* Preview Content */,
+				049729742B97845E00AA17B9 /* InspectionDataClass.swift */,
 			);
 			path = VinBladelNew;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				C9E913022B728EDE001125AF /* HomeScreen.swift in Sources */,
 				C1EA48CD2B87A67200DAA6CF /* UnderCar_Inpection.swift in Sources */,
 				04AB35422B5B386900BCC19D /* VinBladelNewApp.swift in Sources */,
+				049729752B97845E00AA17B9 /* InspectionDataClass.swift in Sources */,
 				04AB35922B62BD5300BCC19D /* CustomerCarsView.swift in Sources */,
 				04E178772B8D40D80075897F /* MailView.swift in Sources */,
 				04AB35942B62CA5900BCC19D /* CustomerCarSpecsView.swift in Sources */,

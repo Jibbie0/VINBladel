@@ -18,18 +18,7 @@ struct Brakes_Inspection: View {
                     .resizable()
                     .frame(width: 700, height: 70)
                     .padding()
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
-                InspectionItem(title: "srousppdsihj")
+                InspectionList(inspectionList: inspectionList)
             }
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct InspectionList: View {
     let inspectionList:[String]
+    @State var inspectionChoices:[ChoiceStruct] = []
     var body: some View {
         VStack {
             HStack {
@@ -28,12 +29,28 @@ struct InspectionList: View {
             .font(.subheadline)
             .font(.caption)
             ForEach(inspectionList, id: \.self) { item in
-                InspectionItem(title: item)
+                InspectionItem(title: item, choices: $inspectionChoices)
             }
         }
+        .onAppear(perform: {
+            inspectionChoices = createArray()
+            print(inspectionChoices)
+        })
+    }
+    func createArray() -> [ChoiceStruct] {
+    var newArray:[ChoiceStruct] = []
+        for item in inspectionList {
+            newArray.append(ChoiceStruct(title: item, choice: "null"))
+        }
+        return newArray
     }
 }
 
 #Preview {
     InspectionList(inspectionList: ["null", "null"])
+}
+
+struct ChoiceStruct {
+    let title: String
+    var choice: String
 }

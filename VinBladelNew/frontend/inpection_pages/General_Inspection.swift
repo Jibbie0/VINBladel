@@ -22,9 +22,7 @@ struct General_Inspection: View {
                     Image("ColorsMeaning")
                         .resizable()
                         .padding()
-                    ForEach(inspectionList, id: \.self) { item in
-                        InspectionItem(title: item)
-                    }
+                    InspectionList(inspectionList: inspectionList)
                 }
             }
         }

@@ -10,7 +10,9 @@ import SwiftUI
 
 struct InspectionList: View {
     let inspectionList:[String]
+    let arrayTitle: String
     @State var inspectionChoices:[ChoiceStruct] = []
+    @ObservedObject var inspectionData = InspectionDataClass()
     var body: some View {
         VStack {
             HStack {
@@ -31,6 +33,11 @@ struct InspectionList: View {
             ForEach(inspectionList, id: \.self) { item in
                 InspectionItem(title: item, choices: $inspectionChoices)
             }
+            Button(action: {
+                inspectionData.saveArray(array: inspectionChoices, arrayTitle: arrayTitle)
+            }, label: {
+                Text("Save")
+            })
         }
         .onAppear(perform: {
             inspectionChoices = createArray()
@@ -47,7 +54,12 @@ struct InspectionList: View {
 }
 
 #Preview {
-    InspectionList(inspectionList: ["null", "null"])
+    InspectionList(inspectionList: ["null", "null"], arrayTitle: "null")
+}
+
+struct ChoiceStruct {
+    let title: String
+    var choice: String
 }
 
 struct ChoiceStruct {

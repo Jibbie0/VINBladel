@@ -16,7 +16,7 @@ struct MultiPoint_Inspection: View {
                 InspectionList(inspectionList: inspectionList, arrayTitle: "multiPoint")
                 Image("ColorsMeaning")
                     .resizable()
-                    .frame(width: 700, height: 70)
+                    .frame(width: 900, height: 90)
                     .padding()
             }
     }

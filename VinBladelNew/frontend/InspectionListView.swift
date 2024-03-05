@@ -48,6 +48,7 @@ struct InspectionList: View {
         }
         .onAppear(perform: {
             inspectionChoices = createArray()
+            print(inspectionChoices)
         })
     }
     func createArray() -> [ChoiceStruct] {
@@ -61,6 +62,11 @@ struct InspectionList: View {
 
 #Preview {
     InspectionList(inspectionList: ["null", "null"], arrayTitle: "null")
+}
+
+struct ChoiceStruct {
+    let title: String
+    var choice: String
 }
 
 struct ChoiceStruct {

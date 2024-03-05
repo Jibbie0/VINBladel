@@ -16,10 +16,11 @@ struct PaymentPage: View {
     @State var showingAlert: Bool = false
     @State var alertField: String = ""
     @State var showingEditAlert: Bool = false
+    @State var email = "hi@gmail.com"
     var body: some View {
         NavigationStack {
             VStack {
-                NavigationLink(destination: Summary_Page()) {
+                NavigationLink(destination: Summary_Page(clientEmail: email)) {
                     Text("Continue to Summary")
                         .frame(maxWidth: .infinity)
                         .padding()

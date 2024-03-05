@@ -36,7 +36,14 @@ struct InspectionList: View {
             Button(action: {
                 inspectionData.saveArray(array: inspectionChoices, arrayTitle: arrayTitle)
             }, label: {
-                Text("Save")
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .frame(width: 100, height: 35)
+                        .foregroundStyle(.orange)
+                    Text("Save")
+                        .foregroundStyle(.white)
+                        .bold()
+                }
             })
         }
         .onAppear(perform: {

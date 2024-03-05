@@ -10,7 +10,7 @@ import SwiftUI
 import FirebaseDatabase
 
 struct General_Inspection: View {
-    let inspectionList: [String] = ["Wiper Blades", "Head Lights", "Mini Lights", "Air Filter", "Cabin Air Filter", "PCV Value", "Washer Fluid", "Engine Oil", "Power Steering Fluid", "Master Cyl. Fluid Level", "Brake Fluid", "Coolant Hoses", "Engine Coolant", "Battery Test", "Battery Accessories", "Start/Charge", "Belts", "Belt Tensioner", "Spark Plugs", "Fuel Filter", "Ignition  Wires", "Valvee Cover Gasket", "Power Steering Hose", "Timing Belt", "Transfer Case/Differential Fliud", "Transmission Fluid"]
+    let inspectionList: [String] = ["Wiper Blades", "Head Lights", "Mini Lights", "Air Filter", "Cabin Air Filter", "PCV Value", "Washer Fluid", "Engine Oil", "Power Steering Fluid", "Master Cyl. Fluid Level", "Brake Fluid", "Coolant Hoses", "Engine Coolant", "Battery Test", "Battery Accessories", "Start/Charge", "Belts", "Belt Tensioner", "Spark Plugs", "Fuel Filter", "Ignition  Wires", "Valve Cover Gasket", "Power Steering Hose", "Timing Belt", "Transfer Case/Differential Fluid", "Transmission Fluid"]
     var body: some View {
         GeometryReader { geo in
             VStack() {
@@ -19,12 +19,10 @@ struct General_Inspection: View {
                     .bold()
                     .padding()
                 ScrollView {
+                    InspectionList(inspectionList: inspectionList, arrayTitle: "general")
                     Image("ColorsMeaning")
                         .resizable()
                         .padding()
-                    ForEach(inspectionList, id: \.self) { item in
-                        InspectionItem(title: item)
-                    }
                 }
             }
         }

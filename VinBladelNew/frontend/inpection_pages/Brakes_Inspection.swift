@@ -11,7 +11,7 @@ import SwiftUI
 
 struct Brakes_Inspection: View {
     var body: some View {
-        let inspectionList: [String] = ["Battery Test", "Battery Accessories", "Start/Charge", "Belts", "Belt Tensioner", "Spark Plugs", "Fuel Filter", "Ignition  Wires", "Valvee Cover Gasket", "Power Steering Hose", "Timing Belt", "Transfer Case/Differential Fliud", "Transmission Fluid"]
+        let inspectionList: [String] = ["LF Pad", "LR Pad/Shoe", "Rear Clean/Adj", "Brake Hose(s)", "Parking Cables", "Other Brake Services", "LF Rotor / RF Rotor", "Drum LR Rotor / Drum RR Rotor", "RF Pad", "RR Pad"]
             VStack {
                 InspectionList(inspectionList: inspectionList, arrayTitle: "brakes")
                 Image("ColorsMeaning")

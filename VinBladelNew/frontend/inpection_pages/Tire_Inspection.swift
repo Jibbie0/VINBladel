@@ -11,7 +11,7 @@ import SwiftUI
 
 struct Tire_Inspection: View {
     var body: some View {
-        let inspectionList: [String] = ["Wiper Blades", "Head Lights", "Mini Lights", "Air Filter", "Cabin Air Filter", "PCV Value", "Washer Fluid", "Engine Oil", "Power Steering Fluid", "Master Cyl. Fluid Level", "Brake Fluid", "Coolant Hoses", "Engine Coolant"]
+        let inspectionList: [String] = ["Left Front", "Left Rear", "Right Front", "Right Rear", "Spare", "Tire Maintenance", "Alignment Check"]
             VStack {
                 InspectionList(inspectionList: inspectionList, arrayTitle: "tire")
                 Image("ColorsMeaning")

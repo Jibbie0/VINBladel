@@ -10,6 +10,7 @@ import SwiftUI
 import FirebaseDatabase
 
 struct Summary_Page: View {
+    let clientEmail: String
     @ObservedObject var firebaseClass = FirebaseClass()
     var body: some View {
         NavigationStack {
@@ -73,7 +74,7 @@ struct Summary_Page: View {
                                         .bold()
                                 }
                                 Spacer()
-                                EmailView()
+                                EmailView(clientEmail: clientEmail)
                                     .frame(width: geo.size.width * 0.3, height: 20)
                                     .padding()
                                     .background(.orange)

@@ -61,8 +61,3 @@ struct ChoiceStruct {
     let title: String
     var choice: String
 }
-
-struct ChoiceStruct {
-    let title: String
-    var choice: String
-}

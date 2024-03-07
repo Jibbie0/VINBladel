@@ -12,46 +12,30 @@ import SwiftUI
 struct Main_Inspection: View {
     var body: some View {
         VStack {
-            NavigationLink(destination: Brakes_Inspection()) {
-                Text("Scan Vin")
-                    .frame(width: 0.8)
-                    .padding()
-                    .background(Color.orange.opacity(0.8))
-                    .clipShape(RoundedRectangle(cornerRadius: 3.0))
-                    .bold()
+            NavigationLink {
+                General_Inspection()
+            } label: {
+                Text("General Inspection")
             }
-            NavigationLink(destination: General_Inspection()) {
-                Text("Scan Vin")
-                    .frame(width: 0.8)
-                    .padding()
-                    .background(Color.orange.opacity(0.8))
-                    .clipShape(RoundedRectangle(cornerRadius: 3.0))
-                    .bold()
+            NavigationLink {
+                Brakes_Inspection()
+            } label: {
+                Text("Brakes Inspection")
             }
-            NavigationLink(destination: UnderCar_Inspection()) {
-                Text("Scan Vin")
-                    .frame(width: 0.8)
-                    .padding()
-                    .background(Color.orange.opacity(0.8))
-                    .clipShape(RoundedRectangle(cornerRadius: 3.0))
-                    .bold()
-                
+            NavigationLink {
+                UnderCar_Inspection()
+            } label: {
+                Text("Under Car Inspection")
             }
-            NavigationLink(destination: MultiPoint_Inspection()) {
-                Text("Scan Vin")
-                    .frame(width: 0.8)
-                    .padding()
-                    .background(Color.orange.opacity(0.8))
-                    .clipShape(RoundedRectangle(cornerRadius: 3.0))
-                    .bold()
+            NavigationLink {
+                MultiPoint_Inspection()
+            } label: {
+                Text("Multi Point Inspection")
             }
-            NavigationLink(destination: Tire_Inspection()) {
-                Text("Scan Vin")
-                    .frame(width: 0.8)
-                    .padding()
-                    .background(Color.orange.opacity(0.8))
-                    .clipShape(RoundedRectangle(cornerRadius: 3.0))
-                    .bold()
+            NavigationLink {
+                Tire_Inspection()
+            } label: {
+                Text("Tire Inspection")
             }
         }
     }

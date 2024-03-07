@@ -39,9 +39,11 @@ struct InspectionItem: View {
                             }
                         }
                 }
-                TextField("Notes...", text: $notesField)
-                    .frame(maxWidth: .infinity)
+                TextField("Notes", text: $notesField)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .multilineTextAlignment(.center)
+                    .textFieldStyle(.roundedBorder)
+                    .font(.system(size: 22))
             }
             .border(Color.black, width: 1)
             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))

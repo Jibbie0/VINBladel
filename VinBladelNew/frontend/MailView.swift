@@ -18,7 +18,7 @@ class MailComposeViewController: UIViewController, MFMailComposeViewControllerDe
             mail.mailComposeDelegate = self
             mail.setToRecipients([clientEmail])
             
-            UIApplication.shared.windows.last?.rootViewController?.present(mail, animated: true, completion: nil)
+             UIApplication.shared.windows.last?.rootViewController?.present(mail, animated: true, completion: nil)
         } else {
             // Alert
         }

@@ -26,7 +26,7 @@ struct CustomerTabs: View {
                     .tabItem {
                         Image(systemName: "paperclip.circle.fill")
                     }
-                CarChecklistPage()
+                Main_Inspection()
                     .tabItem {
                         Image(systemName: "checklist.unchecked")
                     }

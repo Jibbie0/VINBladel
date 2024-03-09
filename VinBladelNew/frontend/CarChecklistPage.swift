@@ -9,7 +9,9 @@ import SwiftUI
 
 struct CarChecklistPage: View {
     var body: some View {
-        General_Inspection()
+        NavigationStack {
+            Main_Inspection()
+        }
     }
 }
 

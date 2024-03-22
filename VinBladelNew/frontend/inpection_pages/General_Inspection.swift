@@ -28,7 +28,6 @@ struct General_Inspection: View {
                 } 
         }
     }
-}
 
 #Preview {
     General_Inspection()

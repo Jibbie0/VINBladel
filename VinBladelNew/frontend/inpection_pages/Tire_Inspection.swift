@@ -10,8 +10,8 @@ import FirebaseDatabase
 import SwiftUI
 
 struct Tire_Inspection: View {
+    @State var inspectionList: [String] = ["Left Front", "Left Rear", "Right Front", "Right Rear", "Spare", "Tire Maintenance", "Alignment Check"]
     var body: some View {
-        let inspectionList: [String] = ["Left Front", "Left Rear", "Right Front", "Right Rear", "Spare", "Tire Maintenance", "Alignment Check"]
             VStack {
                 Text("Tire Inspection")
                     .font(.system(size: 27))

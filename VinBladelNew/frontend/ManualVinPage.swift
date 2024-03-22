@@ -19,13 +19,13 @@ struct ManualVinPage: View {
                     Spacer()
                     VStack {
                         Text("VinBladel")
-                            .font(.system(size: 32))
+                            .font(.system(size: 33))
                             .bold()
                         TextField("Enter Car Vin", text: $carVin)
                             .frame(width: geo.size.width * 0.8, height: 35)
                             .padding()
-                            .background(Color.gray.opacity(0.2))
-                            .clipShape(RoundedRectangle(cornerRadius: 3.0))
+                            .background(Color.gray.opacity(0.9))
+                            .clipShape(RoundedRectangle(cornerRadius: 3.3))
                         
                         NavigationLink {
                             CustomerTabs(customerCar: firebaseClass.pullUsingVIN(vin: carVin), firstName: "", lastName: "")
@@ -34,7 +34,7 @@ struct ManualVinPage: View {
                                 .frame(width: geo.size.width * 0.8, height: 35)
                                 .padding()
                                 .background(Color.orange.opacity(0.9))
-                                .clipShape(RoundedRectangle(cornerRadius: 3.0))
+                                .clipShape(RoundedRectangle(cornerRadius: 3.3))
                                 .foregroundStyle(Color.white)
                         }
                     }

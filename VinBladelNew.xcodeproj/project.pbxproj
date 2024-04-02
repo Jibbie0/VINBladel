@@ -85,6 +85,7 @@
 		04E178762B8D40D80075897F /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		B12D44862B87A9800046C6F6 /* MainInspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInspection.swift; sourceTree = "<group>"; };
 		C1A51DBD2B62C6B6000D0399 /* Summary_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary_Page.swift; sourceTree = "<group>"; };
+		C1E040602BBC625600A57FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C1EA48C82B87A63000DAA6CF /* General_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General_Inspection.swift; sourceTree = "<group>"; };
 		C1EA48CA2B87A65800DAA6CF /* Brakes_Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brakes_Inspection.swift; sourceTree = "<group>"; };
 		C1EA48CC2B87A67200DAA6CF /* UnderCar_Inpection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderCar_Inpection.swift; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 		04AB35402B5B386900BCC19D /* VinBladelNew */ = {
 			isa = PBXGroup;
 			children = (
+				C1E040602BBC625600A57FC0 /* Info.plist */,
 				C98F5E0D2B6026BE00ED07DE /* frontend */,
 				C98F5E0B2B6026BB00ED07DE /* backend */,
 				04AB354F2B601ED900BCC19D /* GoogleService-Info.plist */,
@@ -481,6 +483,8 @@
 				DEVELOPMENT_TEAM = 9F53D3M6K3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VinBladelNew/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This feature needs to access images to show";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -509,6 +513,8 @@
 				DEVELOPMENT_TEAM = NKRNY7R575;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VinBladelNew/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This feature needs to access images to show";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
